@@ -11,17 +11,14 @@ export default function About() {
     ];
 
     const timeline = [
-        { year: 2025, title: "Company Founded", desc: "JESIP TECHNOLOGY LIMITED was established in Lagos with a focus on core mechanical engineering." },
+        { year: 2025, title: "Company Founded", desc: "JESIP TECHNOLOGY LIMITED was established in Nigeria with a focus on core mechanical engineering." },
         { year: 2026, title: "Strategic Expansion", desc: "Expanded services to encompass industrial HVAC systems and material handling design." },
         { year: 2027, title: "International Recognition", desc: "Secured structural fabrication contracts for major regional energy projects." },
         { year: 2028, title: "Tech Integration Hub", desc: "Launched our automated conveyor system modeling and unit division." }
     ];
 
     const team = [
-        { name: "Mr Paul Igwoba", role: "Chief Executive Officer", desc: "20+ years expertise in structural design and urban planning.", image: "" },
-        { name: "Sarah Jenkins", role: "Operations Director", desc: "Leading complex project execution and logistics management.", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400" },
-        { name: "Marcus Thorne", role: "Technical Director", desc: "Specialist in industrial infrastructure and renewable energy systems.", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400" },
-        { name: "Elena Rodriguez", role: "Finance Head", desc: "Managing investment strategies and fiscal sustainability.", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400" }
+        { name: "Mr Paul Igwoba", role: "Chief Executive Officer", desc: "Leading JESIP TECHNOLOGY LIMITED with strategic vision and a commitment to engineering excellence.", image: "" }
     ];
 
     return (
@@ -137,7 +134,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="max-w-sm mx-auto">
                         {team.map((member, i) => (
                             <motion.div
                                 key={i}
@@ -145,14 +142,14 @@ export default function About() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
-                                className="group"
+                                className="group text-center"
                             >
                                 <div className="aspect-[4/5] rounded-2xl overflow-hidden mb-6 relative bg-slate-200">
-                                    <img src={member.image} alt={member.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                                    {member.image && <img src={member.image} alt={member.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />}
                                 </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-1">{member.name}</h3>
-                                <p className="text-primary text-xs font-bold uppercase tracking-wider mb-3">{member.role}</p>
-                                <p className="text-slate-600 text-sm">{member.desc}</p>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-1">{member.name}</h3>
+                                <p className="text-primary text-sm font-bold uppercase tracking-wider mb-4">{member.role}</p>
+                                <p className="text-slate-600 text-base">{member.desc}</p>
                             </motion.div>
                         ))}
                     </div>

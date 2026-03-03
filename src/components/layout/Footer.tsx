@@ -10,9 +10,11 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
                     <div className="space-y-4">
-                        <Link to="/" className="flex items-center gap-2 mb-6">
-                            {/* <img src="/Jesip logo.jpeg" alt="JESIP Technology" className="h-12 w-auto border-2" /> */}
-                            <span className="font-bold text-xl tracking-tight text-white hidden sm:block">JESIP TECH</span>
+                        <Link to="/" className="flex items-center gap-4 mb-6">
+                            <img src="/Jesip logo.jpeg" alt="JESIP Technology" className="h-16 md:h-20 w-auto rounded-md bg-white p-1" />
+                            <span className="font-black text-2xl md:text-3xl tracking-tight text-white">
+                                JESIP <span className="text-primary">TECH</span>
+                            </span>
                         </Link>
                         <p className="text-sm text-gray-400">
                             Leading provider of integrated engineering solutions and technical consultancy for industrial and civil sectors.

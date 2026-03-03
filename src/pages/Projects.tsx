@@ -45,9 +45,11 @@ export default function Projects() {
                                 </div>
                                 <div className="p-6 md:p-8">
                                     <h3 className="text-xl font-bold text-slate-900 mb-3">{project.title}</h3>
-                                    <p className="text-slate-600 text-sm md:text-base">
-                                        {project.description}
-                                    </p>
+                                    {project.description && (
+                                        <p className="text-slate-600 text-sm md:text-base">
+                                            {project.description}
+                                        </p>
+                                    )}
                                 </div>
                             </motion.div>
                         ))}

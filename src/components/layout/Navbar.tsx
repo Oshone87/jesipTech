@@ -19,10 +19,12 @@ export function Navbar() {
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
             <div className="container mx-auto px-4 lg:px-8">
-                <div className="flex h-20 items-center justify-between">
-                    <Link to="/" className="flex items-center gap-2">
-                        <img src="/Jesip logo.jpeg" alt="JESIP Technology" className="h-12 w-auto rounded-md" />
-                        {/* <span className="font-bold text-xl tracking-tight uppercase hidden sm:block">JESIP Technology</span> */}
+                <div className="flex h-24 items-center justify-between">
+                    <Link to="/" className="flex items-center gap-4">
+                        <img src="/Jesip logo.jpeg" alt="JESIP Technology" className="h-16 md:h-20 w-auto rounded-md shadow-sm" />
+                        <span className="font-black text-2xl md:text-3xl tracking-tight text-slate-900 hidden sm:block">
+                            JESIP <span className="text-primary">TECH</span>
+                        </span>
                     </Link>
 
                     {/* Desktop Nav */}

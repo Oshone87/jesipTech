@@ -35,8 +35,8 @@ export default function Contact() {
             // USING WEB3FORMS - No client login required!
             const formData = new FormData();
 
-            // TODO: Just tell your client to check their email for this key!
-            formData.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY_HERE');
+            // Web3Forms Access Key provided by client
+            formData.append('access_key', '50f10237-88d0-43cd-8a32-9a95771cdb78');
 
             formData.append('name', `${data.firstName} ${data.lastName}`);
             formData.append('email', data.email);
