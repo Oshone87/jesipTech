@@ -20,11 +20,16 @@ export function Navbar() {
         <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex h-24 items-center justify-between">
-                    <Link to="/" className="flex items-center gap-4">
-                        <img src="/Jesip logo.jpeg" alt="JESIP Technology" className="h-16 md:h-20 w-auto rounded-md shadow-sm" />
-                        <span className="font-black text-2xl md:text-3xl tracking-tight text-slate-900 hidden sm:block">
-                            JESIP <span className="text-primary">TECH</span>
-                        </span>
+                    <Link to="/" className="flex items-center gap-2 sm:gap-4">
+                        <img src="/Jesip logo.jpeg" alt="JESIP Technology" className="h-12 sm:h-16 md:h-20 w-auto rounded-md shadow-sm" />
+                        <div className="flex flex-col sm:flex-row sm:items-center font-black tracking-tight text-slate-900">
+                            <span className="text-lg sm:text-2xl md:text-3xl leading-none">
+                                JESIP <span className="text-primary hidden sm:inline">TECHNOLOGIES</span>
+                            </span>
+                            <span className="text-primary text-[11px] leading-tight sm:hidden mt-1">
+                                TECHNOLOGIES
+                            </span>
+                        </div>
                     </Link>
 
                     {/* Desktop Nav */}
