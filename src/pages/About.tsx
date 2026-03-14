@@ -18,7 +18,7 @@ export default function About() {
     ];
 
     const team = [
-        { name: "Mr Paul Igwoba", role: "Chief Executive Officer", desc: "Leading JESIP TECHNOLOGY LIMITED with strategic vision and a commitment to engineering excellence.", image: "" }
+        { name: "Mr Paul Igwoba", role: "Chief Executive Officer", desc: "Leading JESIP TECHNOLOGY LIMITED with strategic vision and a commitment to engineering excellence.", image: "/jesip ceo pic.jpeg" }
     ];
 
     return (
